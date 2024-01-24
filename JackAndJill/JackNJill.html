@@ -45,10 +45,17 @@
             top: 100px;
             opacity: 0;
         }
+        #linkincorner {
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            margin: 10px;
     </style>
 </head>
 <body>
 <div class="container">
+
+
 
     <div class="row">
         <div class="col-12">
@@ -59,6 +66,11 @@
         </div>
     </div>
 
+    <div class="row">
+        <div class="col-12">
+            <div id="linkincorner">
+                <a href="new_page.html">Explanation!!!</a>
+            </div>
 
 </div>
 
@@ -121,27 +133,90 @@
                 width: '150',
                 top: '100',
             });
-            $("#BlackBox").animate({
+        });
+        $("#RainBox").click(function () {
+            $("#RainBox").animate({
+                height: '150',
                 opacity: '1',
+                width: '1950',
+                top: '100',
+            });
+            $("#BlackBox").animate({
+                opacity: '0',
                 height: '150',
                 width: '150',
                 top: '0',
             });
-            $("#BlueBox").click(function({
+            $("#RainBox").animate({
+                height: '150',
                 opacity: '1',
-                height: '100',
                 width: '1950',
-                top: '100',
+                top: '200',
             });
-            $("#BlueBox").animate({
+            $("#RainBox").animate({
+                height: '150',
                 opacity: '1',
-                height: '100',
                 width: '1950',
-                top: '100',
+                top: '300',
+            });
+            $("#RainBox").animate({
+                height: '150',
+                opacity: '1',
+                width: '1950',
+                top: '400',
+            });
+            $("#RainBox").animate({
+                height: '150',
+                opacity: '1',
+                width: '1950',
+                top: '500',
+            });
+            $("#RainBox").animate({
+                height: '150',
+                opacity: '1',
+                width: '1950',
+                top: '600',
+            });
+            $("#RainBox").animate({
+                height: '150',
+                opacity: '1',
+                width: '1950',
+                top: '700',
+            });
+            $("#RainBox").animate({
+                height: '150',
+                opacity: '1',
+                width: '1950',
+                top: '800',
+            });
+            $("#RainBox").animate({
+                height: '150',
+                opacity: '0',
+                width: '1950',
+                top: '800',
+            });
+            $("#RainBox").animate({
+                height: '150',
+                opacity: '0',
+                width: '1950',
+                top: '0',
+            });
+            $("#RainBox").animate({
+                height: '150',
+                opacity: '1',
+                width: '1950',
+                top: '0',
+            });
+        });
+        $("#greyBox").click(function () {
+            $("#BlackBox").animate({
+                opacity: '1',
+                height: '150',
+                width: '150',
+                top: '800',
             });
         });
     });
-
 </script>
 </body>
 </html>
